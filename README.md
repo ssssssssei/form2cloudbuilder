@@ -1,0 +1,2 @@
+# form2cloudbuilder
+Microsoft Formのフォームで既定のリソース欄にリソース名を入力すると、AWSまたはAzureのリソースを作成できるシステムです。
