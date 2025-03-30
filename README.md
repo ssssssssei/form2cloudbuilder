@@ -1,6 +1,25 @@
-<img src="image/logo.jpg" alt="公司 Logo" style="width: 100%; display: block;">
+<img src="image/logo.jpg" alt="OneWonder 公司 Logo" style="width: 100%; max-width: 600px; display: block; margin: 0 auto;">
+
+# Form2CloudBuilder 1.0
 
 - [OneWonder](https://next.onewonder.co.jp/) はクラウドコンピューティングに特化したサービスを提供しています
+
+## 目次
+- [Form2CloudBuilder 1.0](#form2cloudbuilder-10)
+  - [目次](#目次)
+  - [使用技術一覧](#使用技術一覧)
+  - [プロジェクト概要](#プロジェクト概要)
+    - [主な特徴](#主な特徴)
+  - [流れイメージ](#流れイメージ)
+  - [システムアーキテクチャ図](#システムアーキテクチャ図)
+  - [構築流れ](#構築流れ)
+      - [①Microsoft Formを作成](#microsoft-formを作成)
+      - [②データがOneDriveのExcelファイルに保存](#データがonedriveのexcelファイルに保存)
+      - [③azureFunctionロジック](#azurefunctionロジック)
+          - [azureFunctionロジックイメージ](#azurefunctionロジックイメージ)
+      - [④azureDevopsの設定](#azuredevopsの設定)
+      - [連絡先](#連絡先)
+
 ## 使用技術一覧
 
 <img src="https://img.shields.io/badge/-Microsoft-666666.svg?logo=microsoft&style=popout">
@@ -9,10 +28,16 @@
 <img src="https://img.shields.io/badge/-Azure%20devops-0078D7.svg?logo=azure-devops&style=plastic">
 <img src="https://img.shields.io/badge/-Amazon%20aws-232F3E.svg?logo=amazon-aws&style=popout">
 
-## プロジェクト名
-Form2CloudBuilder1.0
 ## プロジェクト概要
-Microsoft Formのフォームで既定のリソース欄にリソース名を入力すると、AWSまたはAzureのリソースを作成できるシステムです。
+
+Microsoft Formのフォームで既定のリソース欄にリソース名を入力すると、AWSまたはAzureのリソースを作成できるシステムです。このシステムにより、クラウドリソースのプロビジョニングを自動化し、手動操作の必要性を減らします。
+
+### 主な特徴
+- フォームベースの簡単なリソース定義
+- AWS IAMユーザーとポリシーの自動作成
+- 完全自動化されたワークフロー
+- Microsoft 365とAWS/Azureの統合
+
 ## 流れイメージ
 
 <div style="border:1px solid black; padding:10px; display:inline-block; margin-bottom:5px;">
